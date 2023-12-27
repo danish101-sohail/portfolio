@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <title>Danish Sohail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Danish Sohail</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Danish Sohail</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li>
+                    <a href="#about" onclick="togglemenu()">About</a>
+                </li>
+                <li>
+                    <a href="#Experience" onclick="togglemenu()">Experience</a>
+                </li>
+                <li>
+                    <a href="#Projects" onclick="togglemenu()">Projects</a>
+                </li>
+                <li>
+                    <a href="#Contact" onclick="togglemenu()">Contact</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/pfp-modified.png" alt="Danish-profile-pic">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Danish Sohail</h1>
+            <p class="section-text-p2">Full Stack Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume_DANISH_SOHAIL_.pdf')">
+                See Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contact'">
+                Contact
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/danishsohail101/'">
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/danish101-sohail'">
+            </div>
+        </div>   
+    </section>
+    <section id="about">
+        <p class="section-text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img 
+                src="./assets/about-pic.jpg" 
+                alt="profile picture"
+                class="about-pic"
+                >
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="experience icon"
+                        class="icon"
+                        >
+                        <h3>Experience</h3>
+                        <p>Fresher <br>Full Stack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education icon"
+                        class="icon"
+                        >
+                        <h3>Education</h3>
+                        <p>B.Tech Computer Science Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione molestiae fugiat odit porro temporibus accusamus earum harum sapiente dolore? Tempore provident optio architecto aut, cupiditate cum ipsam incidunt voluptatibus!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"
+        >
+    </section>
+    <section id="experience">
+        <p class="section-text-p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">FullStack Developer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/stack/nextjs-icon.svg" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Next.js</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/tailwind_icon_131947.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Tailwind</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/postgresql.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>PostgreSQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/nodejs.jpg" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Node.js</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/docker.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Docker</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/trpc_logo_icon_249354.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>tRPC</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">FullStack Developer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/stack/nextjs-icon.svg" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Next.js</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/tailwind_icon_131947.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Tailwind</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/postgresql.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>PostgreSQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/nodejs.jpg" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Node.js</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/docker.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Docker</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/trpc_logo_icon_249354.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>tRPC</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'"
+        >
+    </section>
+    <section id="projects">
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/projects/project-1.png" 
+                        alt="project 1"
+                        class="project-img"
+                        >
+                    </div>
+                    <h2 class="experience-sub-title project-title">Live Messaging</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/danish101-sohail'"
+                        >
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#demo-link'"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/projects/project-2.png" 
+                        alt="project 2"
+                        class="project-img"
+                        >
+                    </div>
+                    <h2 class="experience-sub-title project-title">Reminder & Notifications</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/danish101-sohail'"
+                        >
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#demo-link'"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                        src="./assets/projects/project-3.png" 
+                        alt="project 3"
+                        class="project-img"
+                        >
+                    </div>
+                    <h2 class="experience-sub-title project-title">Food Delivery</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/danish101-sohail'"
+                        >
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#demo-link'"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'"
+        >
+    </section>
+    <section id="contact">
+        <p class="section-text-p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="email icon" 
+                class="icon contact-icon email-icon">
+                <p><a href="mailto:danishsohail12911@gmail.com">danishsohail12911@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="linkedin icon" 
+                class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/danishsohail101/">@danishsohail101</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/twitter-x-logo-0339F999CF-seeklogo.com.png" 
+                alt="twitter icon" 
+                class="icon contact-icon">
+                <p><a href="https://twitter.com/dan_knixx_">@dan_knixx_</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#desktop-nav">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Danish Sohail. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
