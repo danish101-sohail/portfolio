@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
-    <title>Danish Sohail</title>
+    <title>Danish Sohail: Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Danish Sohail</div>
+        <div class="logo" onclick="location.href='./index.html'">Danish Sohail</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -32,13 +37,13 @@
                     <a href="#about" onclick="togglemenu()">About</a>
                 </li>
                 <li>
-                    <a href="#Experience" onclick="togglemenu()">Experience</a>
+                    <a href="#experience" onclick="togglemenu()">Experience</a>
                 </li>
                 <li>
-                    <a href="#Projects" onclick="togglemenu()">Projects</a>
+                    <a href="#projects" onclick="togglemenu()">Projects</a>
                 </li>
                 <li>
-                    <a href="#Contact" onclick="togglemenu()">Contact</a>
+                    <a href="./contact.html" onclick="togglemenu()">Contact</a>
                 </li>
             </div>
         </div>
@@ -50,17 +55,21 @@
         <div class="section-text">
             <p class="section-text-p1">Hello, I'm</p>
             <h1 class="title">Danish Sohail</h1>
-            <p class="section-text-p2">Full Stack Web Developer</p>
+            <div class="container">       
+                <span class="text sec-text">Full Stack Web Developer</span>
+            </div>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/resume_DANISH_SOHAIL_.pdf')">
                 See Resume
                 </button>
-                <button class="btn btn-color-1" onclick="location.href='./#Contact'">
+                <button class="btn btn-color-1" onclick="location.href='./contact.html'">
                 Contact
                 </button>
             </div>
             <div id="socials-container">
+                <img src="./assets/mailiconn.png" alt="Email" class="icon" onclick="location.href='mailto:danishsohail12911@gmail.com'">
                 <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/danishsohail101/'">
+                <img src="./assets/twitter-x-logo-0339F999CF-seeklogo.com.png" alt="My Twitter Profile" class="icon" onclick="location.href='https://twitter.com/dan_knixx_'">
                 <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/danish101-sohail'">
             </div>
         </div>   
@@ -85,7 +94,7 @@
                         class="icon"
                         >
                         <h3>Experience</h3>
-                        <p>Fresher <br>Full Stack Development</p>
+                        <p>Fresher <br>Full Stack Web Development</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" 
@@ -93,12 +102,12 @@
                         class="icon"
                         >
                         <h3>Education</h3>
-                        <p>B.Tech Computer Science Engineering</p>
+                        <p>B.Tech Computer Science</p>
                     </div>
                 </div>
                 <div class="text-container">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ratione molestiae fugiat odit porro temporibus accusamus earum harum sapiente dolore? Tempore provident optio architecto aut, cupiditate cum ipsam incidunt voluptatibus!
+                        Hey, I'm Danish Sohail, a web developer passionate about crafting seamless online experiences. With expertise in HTML, CSS, JavaScript, ReactJS, NextJS, NodeJS, MongoDB & Tailwind CSS, I bring 2 years of hands-on coding experience. From building responsive websites to optimizing user interfaces, I'm dedicated to creating visually appealing and functionally robust digital solutions. Let's collaborate and turn your web vision into reality! 
                     </p>
                 </div>
             </div>
@@ -115,8 +124,73 @@
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">FullStack Developer</h2>
+                <div class="details-container ewidth">
+                    <h2 class="experience-sub-title">Full Stack Web Developer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/stack/nextjs-icon.svg" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Next.js</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/logo-nodejs-icon-1755x2048-ejfcifdr.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Node.js</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/tailwind_icon_131947.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Tailwind</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/docker.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>Docker</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/postgresql.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>PostgreSQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/stack/trpc_logo_icon_249354.png" 
+                            alt="experience icon"
+                            class="icon"
+                            >
+                            <div>
+                                <h3>tRPC</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- <div class="details-container">
+                    <h2 class="experience-sub-title">Software Engineer</h2>
                     <div class="article-container">
                         <article>
                             <img 
@@ -179,72 +253,7 @@
                             </div>
                         </article>
                     </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">FullStack Developer</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/stack/nextjs-icon.svg" 
-                            alt="experience icon"
-                            class="icon"
-                            >
-                            <div>
-                                <h3>Next.js</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/stack/tailwind_icon_131947.png" 
-                            alt="experience icon"
-                            class="icon"
-                            >
-                            <div>
-                                <h3>Tailwind</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/stack/postgresql.png" 
-                            alt="experience icon"
-                            class="icon"
-                            >
-                            <div>
-                                <h3>PostgreSQL</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/stack/logo-nodejs-icon-1755x2048-ejfcifdr.png" 
-                            alt="experience icon"
-                            class="icon"
-                            >
-                            <div>
-                                <h3>Node.js</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/stack/docker.png" 
-                            alt="experience icon"
-                            class="icon"
-                            >
-                            <div>
-                                <h3>Docker</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/stack/trpc_logo_icon_249354.png" 
-                            alt="experience icon"
-                            class="icon"
-                            >
-                            <div>
-                                <h3>tRPC</h3>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <img 
@@ -333,37 +342,43 @@
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img 
-                src="./assets/email.png" 
-                alt="email icon" 
-                class="icon contact-icon email-icon">
-                <p><a href="mailto:danishsohail12911@gmail.com">danishsohail12911@gmail.com</a></p>
+                
+                <a href="mailto:danishsohail12911@gmail.com"><img 
+                    src="./assets/mailiconn.png" 
+                    alt="email icon" 
+                    class="icon contact-icon"><br>danishsohail12911@gmail.com</a>
             </div>
             <div class="contact-info-container">
-                <img 
-                src="./assets/linkedin.png" 
-                alt="linkedin icon" 
-                class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/danishsohail101/">@danishsohail101</a></p>
+                <a href="https://www.linkedin.com/in/danishsohail101/"><img 
+                    src="./assets/linkedin.png" 
+                    alt="linkedin icon" 
+                    class="icon contact-icon"><br>danishsohail101</a>
             </div>
             <div class="contact-info-container">
-                <img 
-                src="./assets/twitter-x-logo-0339F999CF-seeklogo.com.png" 
-                alt="twitter icon" 
-                class="icon contact-icon">
-                <p><a href="https://twitter.com/dan_knixx_">@dan_knixx_</a></p>
+                
+                <p><a href="https://twitter.com/dan_knixx_"><img 
+                    src="./assets/twitter-x-logo-0339F999CF-seeklogo.com.png" 
+                    alt="twitter icon" 
+                    class="icon contact-icon"><br>dan_knixx_</a></p>
+            </div>
+            <div class="contact-info-container">
+                
+                <p><a href="https://github.com/danish101-sohail"><img 
+                    src="./assets/github.png" 
+                    alt="github icon" 
+                    class="icon contact-icon"><br>danish101-sohail</a></p>
             </div>
         </div>
     </section>
     <footer>
-        <nav>
+        <nav class="nav-links-f">
             <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#desktop-nav">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="nav-links-f">
+                    <li><a id="fa" href="./index.html">Home</a></li>
+                    <li><a id="fa" href="#about">About</a></li>
+                    <li><a id="fa" href="#experience">Experience</a></li>
+                    <li><a id="fa" href="#projects">Projects</a></li>
+                    <li><a id="fa" href="./contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>

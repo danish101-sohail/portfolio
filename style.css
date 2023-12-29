@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -34,6 +35,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    box-shadow: 0 1px 3px rgb(163, 163, 163);
 }
 
 .nav-links{
@@ -147,7 +149,6 @@ section{
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem ;
-    box-sizing: border-box;
     min-height: fit-content;
 }
 
@@ -162,6 +163,7 @@ section{
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    margin-bottom: 15rem;
 }
 
 .section-pic-container{
@@ -174,14 +176,52 @@ section{
 .section-text{
     align-self: center;
     text-align: center;
+    min-width: 40ch;
 }
 
-.section-text p{
+.section-text p {
     font-weight: 600;
 }
 
 .section-text-p1{
     text-align: center;
+}
+/* typewriter */
+
+.container{
+    display: flex;
+    overflow: hidden;
+    align-self: center;
+    justify-content: center;
+    /* margin-left: 3ch; */
+    text-align: left;
+}
+.container .text{
+    position: relative;
+    color: rgb(85, 85, 85);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-left: 0.28rem solid rgb(163, 163, 163);
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
 }
 
 .section-text-p2{
@@ -259,6 +299,7 @@ section{
 
 #about{
     position: relative;
+    margin-bottom: 15rem;
 }
 
 .about-containers{
@@ -288,6 +329,7 @@ section{
 }
 
 .details-container{
+
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -311,6 +353,7 @@ section{
 /* experience  */
 #experience{
     position: relative;
+    margin-bottom: 15rem;
 }
 
 .experience-sub-title{
@@ -322,8 +365,13 @@ section{
 
 .experience-details-container{
     display: flex;
-    justify-content: center;
+    justify-content:start;
     flex-direction:column;
+    /* width: 100vh; */
+}
+
+.ewidth{
+    margin-inline: 10rem;
 }
 
 .article-container{
@@ -349,6 +397,7 @@ article.icon{
 /* projects */
 #projects{
     position: relative;
+    margin-bottom: 15rem;
 }
 
 .color-container{
@@ -383,16 +432,17 @@ article.icon{
 
 .contact-info-upper-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
-    margin: 2rem auto;
+    margin: 2rem;
     padding: 0.5rem;
 }
 
 .contact-info-container{
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -405,19 +455,68 @@ article.icon{
 }
 
 .contact-icon{
-    cursor: default;
+    cursor: pointer;
 }
 
-.email-icon{
-    height: 2.4rem;
+/* contact page */
+.contact-iconc{
+    cursor: pointer;
 }
 
+.logo-c{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.animated-icon:hover{
+    animation: heartbeat 2s infinite;
+}
+
+.c{
+    height: 4rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.contact-info-upper-container-c {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 10vh;
+    padding: 0.5rem;
+}
+
+.section-text-p1-c{
+    text-align: center;
+    margin: auto;
+    width: 50ch;
+    font-size: larger;
+}
+
+.title-c{
+    font-size: 4rem;
+    text-align: center;
+}
 /* footer */
 footer{
-    height: 26dvh;
-    margin: 0 1rem;
+    height: 40dvh;
+    margin: none;
+    background-color: black;
+
 }
 
 footer p{
-    text-align: center;
+    text-align: start;
+    margin: 5rem;
+}
+
+.nav-links-f{
+    margin: 2dvh;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    box-shadow: none;
+}
+footer a{
+    color: white;
 }
