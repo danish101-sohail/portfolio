@@ -69,8 +69,8 @@ a:hover{
     display: none;
 }
 
-.hamburger-manu{
-    position: relative;
+.hamburger-menu{
+    position: inherit;
     display: inline-block;
 }
 
@@ -193,8 +193,7 @@ section{
     overflow: hidden;
     align-self: center;
     justify-content: center;
-    /* margin-left: 3ch; */
-    text-align: left;
+    margin-inline: auto;
 }
 .container .text{
     position: relative;
@@ -304,8 +303,7 @@ section{
 
 .about-containers{
     gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-block: 2rem;
 }
 
 .about-details-container{
@@ -329,7 +327,6 @@ section{
 }
 
 .details-container{
-
     padding: 1.5rem;
     flex: 1;
     background: white;
@@ -348,6 +345,7 @@ section{
     height: 400px;
     width: 400px;
     margin: auto 0;
+    align-self: center;
 }
 
 /* experience  */
@@ -367,11 +365,7 @@ section{
     display: flex;
     justify-content:start;
     flex-direction:column;
-    /* width: 100vh; */
-}
-
-.ewidth{
-    margin-inline: 10rem;
+    /* margin-inline: 2rem; */
 }
 
 .article-container{
@@ -398,6 +392,13 @@ article.icon{
 #projects{
     position: relative;
     margin-bottom: 15rem;
+}
+
+.project-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
 }
 
 .color-container{
@@ -476,6 +477,12 @@ article.icon{
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     margin-bottom: 2rem;
+}
+#contact-c{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    height: 70dvh;
 }
 
 .contact-info-upper-container-c {

@@ -1,6 +1,6 @@
 @media screen and(max-width:1400px) {
     #profile{
-        height: 83dvh;
+        height: 83vh;
         margin-bottom: 6rem;
     }
     .about-containers{
@@ -27,16 +27,54 @@
     section, .section-container{
         height: fit-content;
     }
+    .section-text{
+      align-items: center;  
+      min-width: auto;
+    }
+    .container .text{
+        font-size: 1.25rem;
+    }
     section{
         margin: 0 5%;
     }
     .section-pic-container{
+        justify-content: center;
         width: 275px;
         height: 275px;
-        margin: 0 auto 2rem;
+        margin: 1rem auto 2rem;
     }
     .about-containers{
         margin-top: 0;
+    }
+
+    .project-containers{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* contact page */
+    #contact-c{
+        margin: 0 5%;
+        display: block;
+    }
+    .con{                                       
+        display: block;
+        height: 84vh;
+    }
+    .logo-c{
+        font-size: 1.5rem;
+    }
+    .c{
+        height: 2rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+        margin-bottom: 1rem;
+    }
+    .contact-info-upper-container-c {
+        flex-direction: column;
+    }
+    .section-text-p1-c{
+        margin: 2rem ;
+        width: 80%;
     }
 }
 
@@ -52,9 +90,13 @@
     article{
         font-size: 1rem;
     }
-    footer nav{
+    footer, .nav-links-f{
         height: fit-content;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
+
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
     }
     .about-containers,
     .contact-info-upper-container,
