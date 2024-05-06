@@ -2,6 +2,10 @@
 
 This is a simple portfolio website built using HTML, CSS, and JavaScript.
 
+![image](https://github.com/danish101-sohail/portfolio/assets/121930033/3d6bf3cc-4249-4594-abcf-c00068484f7f)
+
+
+
 ## Features
 
 - Responsive design: The website is optimized for various screen sizes, including desktops, tablets, and mobile devices.
