@@ -354,6 +354,9 @@ section{
     margin-bottom: 15rem;
 }
 
+.icon-e{
+    height: 2.75rem;
+}
 .experience-sub-title{
     color: rgb(85, 85, 85);
     font-weight: 600;
@@ -365,7 +368,7 @@ section{
     display: flex;
     justify-content:start;
     flex-direction:column;
-    /* margin-inline: 2rem; */
+    margin-inline: 2rem;
 }
 
 .article-container{
@@ -409,7 +412,7 @@ article.icon{
 .project-img{
     border-radius: 2rem;
     width: 90%;
-    height: 90%;
+    height: 80%;
 }
 
 .project-title{
